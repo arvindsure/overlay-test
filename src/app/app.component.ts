@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {OverlayExampleComponent} from './components/overlay-example/overlay-example.component'
 
 @Component({
   selector: 'app-root',

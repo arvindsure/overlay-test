@@ -1,0 +1,13 @@
+
+<ul>
+    <li *ngFor="let value of dummyList">
+        <button (click)="openOverlay(value)">Open Overlay {{ value }}</button>
+  </ul>
+
+<ng-template #overlayTemplate let-source>
+    <div class="overlay-container">
+    <h2>Source Component Values:</h2>
+    <p>{{ source }}</p>
+    <button (click)="closeOverlay()">Close Overlay</button>
+    </div>
+</ng-template>

@@ -3,16 +3,20 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { OverlayModule } from '@angular/cdk/overlay';
+import { OverlayExampleComponent } from './components/overlay-example/overlay-example.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    OverlayExampleComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    OverlayModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent, OverlayExampleComponent]
 })
 export class AppModule { }
